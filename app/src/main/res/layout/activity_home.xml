@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".HomeActivity">
+
+    <ImageButton
+        android:id="@+id/Profilebg"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="ViewProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardbg" />
+
+    <ImageButton
+        android:id="@+id/dataHome"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="MobileDataUsage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Profilebg"
+        app:srcCompat="@drawable/cardbg" />
+
+    <ImageButton
+        android:id="@+id/smsHome"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="SMSusage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataHome"
+        app:srcCompat="@drawable/cardbg" />
+
+    <ImageButton
+        android:id="@+id/billsHome"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="PayBills"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smsHome"
+        app:srcCompat="@drawable/cardbg" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="View Profile"
+        android:textColor="#F6EEEE"
+        android:textColorHint="#F4F0F0"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Profilebg"
+        app:layout_constraintStart_toStartOf="@+id/Profilebg"
+        app:layout_constraintTop_toTopOf="@+id/Profilebg"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Mobile Data Usage"
+        android:textColor="#FAF8F8"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dataHome"
+        app:layout_constraintStart_toStartOf="@+id/dataHome"
+        app:layout_constraintTop_toTopOf="@+id/dataHome"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:indeterminateDuration="3500"
+        android:maxWidth="48dip"
+        android:maxHeight="40dp"
+        android:progressDrawable="@android:drawable/btn_default_small"
+        app:layout_constraintBottom_toBottomOf="@+id/dataHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dataHome"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS Usage"
+        android:textColor="#F4EFEF"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/smsHome"
+        app:layout_constraintEnd_toEndOf="@+id/smsHome"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="@+id/smsHome"
+        app:layout_constraintTop_toTopOf="@+id/smsHome"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:progressDrawable="@android:drawable/btn_default"
+        app:layout_constraintBottom_toBottomOf="@+id/smsHome"
+        app:layout_constraintEnd_toEndOf="@+id/smsHome"
+        app:layout_constraintStart_toStartOf="@+id/smsHome"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:text="Pay Your Bills"
+        android:textColor="#F3EAEA"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/billsHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="@+id/billsHome"
+        app:layout_constraintTop_toTopOf="@+id/billsHome"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to EasyPay!!"
+        android:textColor="#0C0707"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/Profilebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
+</androidx.constraintlayout.widget.ConstraintLayout>
